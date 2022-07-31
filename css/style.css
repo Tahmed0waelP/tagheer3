@@ -124,16 +124,16 @@ p.line:before {
   top: 25px;
 }
 
-.toggle-icon:hover spam:first-child {
+.toggle-icon.open spam:first-child {
   top: 12.5px;
   transform: rotate(45deg);
 }
 
-.toggle-icon:hover spam:nth-child(2) {
+.toggle-icon.open spam:nth-child(2) {
   opacity: 0;
 }
 
-.toggle-icon:hover spam:last-child {
+.toggle-icon.open spam:last-child {
   top: 12.5px;
   transform: rotate(-45deg);
 }

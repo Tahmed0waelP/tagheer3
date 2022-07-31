@@ -1,5 +1,6 @@
 $('.toggle-icon').click(() => {
   $('nav').slideToggle();
+  document.querySelector('.toggle-icon').classList.toggle('open');
 });
 
 window.setInterval(() => {
