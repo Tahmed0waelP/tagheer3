@@ -20,7 +20,9 @@ ul {
 }
 
 section {
-  height: 100vh;
+  min-height: 100vh;
+	padding-bottom: 5vh;
+	padding-top: 5vh;
 }
 
 /* End globel roles */
@@ -51,10 +53,9 @@ section {
 }
 
 .title {
-  padding-top: 6vh;
   text-align: center;
   position: relative;
-  margin-bottom: 20%;
+  margin-bottom: 7vh;
   font-size: 2rem;
 }
 
@@ -84,6 +85,7 @@ p.line {
   position: relative;
   padding-left: 10px;
   font-size: 1.5rem;
+	vertical-align: middle;
 }
 
 p.line:before {
@@ -151,11 +153,19 @@ header {
 
 header .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-top: 1vh;
   padding-bottom: 1vh;
+}
+
+@media (max-width: 992px) {
+	header .container {
+		flex-direction: column;
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+	}
 }
 
 header .brand {
@@ -170,12 +180,19 @@ header .brand img {
 }
 
 header nav {
-  width: 100%;
+  width: 80%;
+}
+
+@media (max-width: 992px) {
+	header nav {
+		width: 100%;
+		margin-top: 1vh;
+	}
 }
 
 header nav ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 header nav ul li:hover a {
@@ -280,6 +297,45 @@ header .toggle-icon {
 
 /* End home section */
 /* Start about section */
-.about {}
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* justify-content: center; */
+}
+
+.about .content {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	width: 100%;
+	justify-self: center;
+}
+
+@media (max-width: 544px) {
+	.about .content {
+		flex-direction: column;
+	}
+}
+
+.about .content p {
+	width: 60%;
+}
+
+.about .content img {
+	width: 100%;
+}
+
+@media (max-width: 544px) {
+	.about .content p {
+		width: 100%;
+	}
+	.about .content img {
+		/* width: 60%;
+		margin: auto;
+		margin-bottom: 3vh; */
+		display: none;
+	}
+}
 
 /* End about section */
