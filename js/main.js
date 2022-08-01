@@ -13,8 +13,8 @@ window.setInterval(() => {
 // Yasreb
 // 4*KO2 + 2*CO2 = 2*K2CO3 + 3*O2
 // Variables
-currentCarbonRationInAir = prompt(); // The current carbon vakue in the air that will get from the sensor
-normalCardonRationInAir = 50; // The Normal Carbon Ration On The Air
-unnormalCarbonRatioInAir = currentCarbonRationInAir - normalCardonRationInAir; // The carbon ration that more than the normal carbon ration on the air
-ko2Ratio = unnormalCarbonRatioInAir * 2; // The KO2 ratio
-console.log('KO2 Ration is: ' + ko2Ratio); // Final value
+// currentCarbonRationInAir = prompt(); // The current carbon vakue in the air that will get from the sensor
+// normalCardonRationInAir = 50; // The Normal Carbon Ration On The Air
+// unnormalCarbonRatioInAir = currentCarbonRationInAir - normalCardonRationInAir; // The carbon ration that more than the normal carbon ration on the air
+// ko2Ratio = unnormalCarbonRatioInAir * 2; // The KO2 ratio
+// console.log('KO2 Ration is: ' + ko2Ratio); // Final value

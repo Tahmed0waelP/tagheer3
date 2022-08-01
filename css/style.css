@@ -2,7 +2,7 @@
 :root {
   --main-color: rgb(17, 17, 69);
   --secondry-color: rgb(222, 31, 38);
-  --text-color: rgb(97, 97, 97);
+  --text-color: rgb(155, 155, 155);
   --transition-duration: 0.3s;
 }
 
@@ -13,6 +13,10 @@
   padding: 0;
   box-sizing: border-box;
   color: var(--text-color);
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
 }
 
 ul {
@@ -268,20 +272,33 @@ header .toggle-icon {
   align-items: center;
   background-size: cover;
   background-position: center;
+	position: relative;
+}
+
+.home .overlay {
+	position: absolute;
+	z-index: 2;
+	background: rgba(0, 0, 0, 0.8);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
 
 .home .text {
-  background: rgba(var(--secondry-color), 0.4);
+  background: rgba(222, 31, 38, 0.6);
   width: 50%;
   padding: 3vh 4vw 4vh 5vw;
   max-height: 50%;
+	position: absolute;
+	z-index: 2;
 }
 
 .home .text h1 {
   margin: 0;
   font-size: 3rem;
   margin-bottom: 2vh;
-  color: var(--secondry-color);
+  color: var(--main-color);
 }
 
 .home .text p {
@@ -297,11 +314,8 @@ header .toggle-icon {
 
 /* End home section */
 /* Start about section */
-.about {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	/* justify-content: center; */
+.about .container{
+	height: 100% !important;
 }
 
 .about .content {
@@ -323,7 +337,7 @@ header .toggle-icon {
 }
 
 .about .content img {
-	width: 100%;
+	width: 30%;
 }
 
 @media (max-width: 544px) {
@@ -339,3 +353,41 @@ header .toggle-icon {
 }
 
 /* End about section */
+/* Start mission & vision section */
+.missionandvision {
+	background: var(--main-color);
+}
+
+.missionandvision .content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	justify-self: center;
+}
+
+@media (max-width: 767px) {
+	.missionandvision .content {
+		flex-direction: column;
+	}
+}
+
+.missionandvision .content p {
+	width: 48%;
+}
+
+.missionandvision .content p spam {
+	color: var(--secondry-color);
+	font-weight: 900;
+}
+
+@media (max-width: 767px) {
+	.missionandvision .content p {
+		width: 100%;
+	}
+	.missionandvision .content p:not(:last-child) {
+		margin-bottom: 4vh;
+	}
+}
+
+/* End mission & vision section */
