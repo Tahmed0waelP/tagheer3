@@ -264,9 +264,8 @@ header .toggle-icon {
     width: 100%;
     background: var(--text-color);
     position: absolute;
-    top: 170%;
+    top: calc(100% + 2vh);
     left: 0;
-    /* border-bottom: 2px solid var(--text-color); */
   }
 
   header .toggle-icon {
@@ -304,7 +303,7 @@ header .toggle-icon {
   background: rgba(222, 31, 38, 0.6);
   width: 50%;
   padding: 3vh 4vw 4vh 5vw;
-  max-height: 50%;
+  min-height: 50%;
 	position: absolute;
 	z-index: 2;
 }
@@ -429,9 +428,7 @@ header .toggle-icon {
 @media (min-width: 768px) and (max-width: 992px) {
 	.missionandvision .content p {
 		width: 100%;
-	}
-	.missionandvision .content p:not(:last-child) {
-		margin-bottom: 4vh;
+		margin-bottom: 10vh;
 	}
 }
 
