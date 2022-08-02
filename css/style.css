@@ -26,9 +26,8 @@ ul {
 }
 
 section {
-  min-height: 100vh;
 	padding-bottom: 5vh;
-	padding-top: 5vh;
+	padding-top: 8vh;
 }
 
 /* End globel roles */
