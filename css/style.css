@@ -57,14 +57,14 @@ section {
   }
 }
 
-.title {
+h2.title {
   text-align: center;
   position: relative;
   margin-bottom: 7vh;
   font-size: 2rem;
 }
 
-.title:after {
+h2.title:after {
   content: '';
   position: absolute;
   top: 120%;
@@ -433,3 +433,40 @@ header .toggle-icon {
 }
 
 /* End mission & vision section */
+/* Start board section */
+.board {}
+.board .container {}
+.board .container .content {
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+}
+.board .container .content .committee {
+	width: 100%;
+	display: flex;
+	flex-shrink: 0;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.board .container .content .card {
+	width: 30vw;
+	overflow: hidden;
+	background: var(--main-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3vw 2vw;
+}
+.board .container .content .card .image {
+	width: 15vw;
+	height: 15vw;
+	border-radius: 15vw;
+}
+.board .container .content .card .text {
+	text-align: center;
+}
+.board .container .content .card .text .title {
+	font-size: 1.5rem;
+}
+.board .container .content .card .text .details {}
+/* End board section */
