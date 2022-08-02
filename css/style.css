@@ -26,7 +26,7 @@ ul {
 }
 
 section {
-	padding-bottom: 5vh;
+	padding-bottom: 8vh;
 	padding-top: 8vh;
 }
 
@@ -96,7 +96,7 @@ p.line {
 p.line:before {
   content: '';
   width: 5px;
-  height: 105%;
+  height: 100%;
   border-radius: 10px;
   position: absolute;
   top: 0;
@@ -148,12 +148,13 @@ p.line:before {
 /* End componnents */
 /* Start header */
 header {
-  background: var(--main-color);
+  background: transparent;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
+  transition: all var(--transition-duration) ease ;
 }
 
 header .container {
@@ -234,7 +235,7 @@ header .toggle-icon {
     display: none;
     top: 100%;
     left: 0;
-    background: var(--main-color);
+    background: inherit;
     padding-right: 2vw;
     padding-left: 2vw;
 		width: 100%;
@@ -302,7 +303,6 @@ header .toggle-icon {
   background: rgba(222, 31, 38, 0.6);
   width: 50%;
   padding: 3vh 4vw 4vh 5vw;
-  min-height: 50%;
 	position: absolute;
 	z-index: 2;
 }
@@ -412,7 +412,8 @@ header .toggle-icon {
 .missionandvision .content p spam {
 	color: var(--secondry-color);
 	font-weight: 900;
-	line-height: 2.3;
+	padding-bottom: 2vh;
+	display: block;
 }
 
 @media (max-width: 767px) {

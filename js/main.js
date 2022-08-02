@@ -1,3 +1,6 @@
+let header = document.querySelector('header');
+let currentScroll;
+
 $('.toggle-icon').click(() => {
   $('nav').slideToggle();
   document.querySelector('.toggle-icon').classList.toggle('open');
@@ -19,4 +22,15 @@ function calc (currentCarbonRationInAir) {
   unnormalCarbonRatioInAir = currentCarbonRationInAir - normalCardonRationInAir; // The carbon ration that more than the normal carbon ration on the air
   ko2Ratio = unnormalCarbonRatioInAir * 2; // The KO2 ratio
   console.log('KO2 Ration is: ' + ko2Ratio); // Final value
+}
+
+
+window.onscroll = (e) => {
+  currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    header.style.background = 'transparent';
+  } else {
+    header.style.background = 'var(--main-color)';
+  }
+  console.log(window.pageYOffset);
 }
