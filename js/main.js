@@ -1,9 +1,18 @@
 let header = document.querySelector('header');
+let nav = document.querySelector('nav');
 let currentScroll;
+let oldScroll = 0;
 
 $('.toggle-icon').click(() => {
   $('nav').slideToggle();
-  document.querySelector('.toggle-icon').classList.toggle('open');
+  document.querySelector('header .toggle-icon').classList.toggle('open');
+	if (window.pageYOffset <= 0) {
+		if (header.style.background == 'var(--main-color)') {
+			header.style.background = 'transparent';
+		} else {
+			header.style.background = 'var(--main-color)';
+		}
+	}
 });
 
 window.setInterval(() => {
@@ -32,5 +41,19 @@ window.onscroll = (e) => {
   } else {
     header.style.background = 'var(--main-color)';
   }
-  console.log(window.pageYOffset);
+	if (oldScroll < currentScroll) {
+    // console.log("Up");
+		header.style.position = 'static';
+		nav.style.display = 'none';
+  } else if (oldScroll > currentScroll) {
+		// console.log("Down");
+		header.style.position = 'fixed';
+  }
+	if (nav.style.display == 'none') {
+		document.querySelector('header .toggle-icon').classList.remove('open');
+	} else {
+		document.querySelector('header .toggle-icon').classList.add('open');
+	}
+  oldScroll = currentScroll;
+  // console.log(window.pageYOffset);
 }

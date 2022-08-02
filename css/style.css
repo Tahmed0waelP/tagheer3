@@ -235,7 +235,7 @@ header .toggle-icon {
     display: none;
     top: 100%;
     left: 0;
-    background: inherit;
+    background: var(--main-color);
     padding-right: 2vw;
     padding-left: 2vw;
 		width: 100%;
@@ -327,11 +327,11 @@ header .toggle-icon {
 
 /* End home section */
 /* Start about section */
-.about .container{
+.aboutus .container{
 	height: 100% !important;
 }
 
-.about .content {
+.aboutus .content {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
@@ -341,31 +341,31 @@ header .toggle-icon {
 }
 
 @media (max-width: 767px) {
-	.about .content {
+	.aboutus .content {
 		flex-direction: column;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-	.about .content {
+	.aboutus .content {
 		width: 80%;
 		margin: auto;
 	}
 }
 
-.about .content p {
+.aboutus .content p {
 	width: 60%;
 }
 
-.about .content img {
+.aboutus .content img {
 	width: 30%;
 }
 
 @media (max-width: 767px) {
-	.about .content p {
+	.aboutus .content p {
 		width: 100%;
 	}
-	.about .content img {
+	.aboutus .content img {
 		/* width: 60%;
 		margin: auto;
 		margin-bottom: 3vh; */
@@ -374,10 +374,10 @@ header .toggle-icon {
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-	.about .content p {
+	.aboutus .content p {
 		width: 100%;
 	}
-	.about .content img {
+	.aboutus .content img {
 		display: none;
 	}
 }
