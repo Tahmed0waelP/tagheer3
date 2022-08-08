@@ -13,9 +13,10 @@
 		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
 		rel="stylesheet">
 	<!-- Normalize stylesheet -->
-	<link rel="stylesheet" href="CSS/normalize.css">
+	<link rel="stylesheet" href="css/normalize.css">
 	<!-- Fontawasme stylesheet -->
-	<!-- <link rel="stylesheet" href="CSS/all.min.css"> -->
+	<!-- <link rel="stylesheet" href="css/all.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 	<!-- Custom Styles -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -33,10 +34,10 @@
 						<li><a href="#home">Home</a></li>
 						<li><a href="#aboutus">About Us</a></li>
 						<li><a href="#missionandvision">Vission & Mission</a></li>
-						<li><a href="#">Board</a></li>
-						<li><a href="#">Partners</a></li>
-						<li><a href="#">Achievements</a></li>
-						<li><a href="#">Courses</a></li>
+						<li><a href="#board">Board</a></li>
+						<li><a href="#parteners">Partners</a></li>
+						<!-- <li><a href="#">Achievements</a></li>
+						<li><a href="#">Courses</a></li> -->
 						<li><a href="#">Contact Us</a></li>
 					</ul>
 				</div>
@@ -115,6 +116,7 @@
 						<div class="text">
 							<h5 class="title">Ahmed Ateya</h5>
 							<p class="details">Founder & CEO</p>
+							<p class="quate">"Lorem ipsum dolor sit amet consectetur."</p>
 						</div>
 					</div>
 				</div>
@@ -124,6 +126,7 @@
 						<div class="text">
 							<h5 class="title">Omar Esam</h5>
 							<p class="details">Vice-Head HR</p>
+							<p class="quate">"Lorem ipsum dolor sit amet consectetur."</p>
 						</div>
 					</div>
 					<div class="card">
@@ -131,6 +134,7 @@
 						<div class="text">
 							<h5 class="title">Youssef Mohammed</h5>
 							<p class="details">Head HR</p>
+							<p class="quate">"Lorem ipsum dolor sit amet consectetur."</p>
 						</div>
 					</div>
 					<div class="card">
@@ -138,6 +142,7 @@
 						<div class="text">
 							<h5 class="title">Mohammed Saad</h5>
 							<p class="details">Head HR</p>
+							<p class="quate">"Lorem ipsum dolor sit amet consectetur."</p>
 						</div>
 					</div>
 					<div class="card">
@@ -145,16 +150,17 @@
 						<div class="text">
 							<h5 class="title">Fareeda Fathy</h5>
 							<p class="details">Vice-Head HR</p>
+							<p class="quate">"Lorem ipsum dolor sit amet consectetur."</p>
 						</div>
 					</div>
 				</div>
 				<div class="committee cw">
 					<div class="card">
-						<h3>Head Acadimcs & Writing</h3>
 						<img src="images/board/momen_aslan.jpg" alt="" class="image">
 						<div class="text">
 							<h5 class="title">Momen Aslan</h5>
 							<p class="details">Head Acadimcs & Writing</p>
+							<p class="quate">"Lorem ipsum dolor sit amet consectetur."</p>
 						</div>
 					</div>
 				</div>
@@ -162,6 +168,104 @@
 		</div>
 	</section>
 	<!-- End board section -->
+	<!-- Start parteners section -->
+	<section class="parteners" id="parteners">
+		<div class="container">
+			<h2 class="title"> Parteners </h2>
+			<div class="content">
+				<div class="type cm">
+					<div class="card">
+						<img src="images/home/bg_1.png" alt="" class="image">
+						<div class="text">
+							<h5 class="title">Partener Name</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End parteners section -->
+	<!-- Start contactus section -->
+	<section class="contactus" id="contactus">
+		<div class="container">
+			<h2 class="title">Contact Us</h2>
+			<div class="content">
+				<form action="#" method="post" id="contact_form">
+					<div class="name">
+						<label for="name"></label>
+						<input type="text" placeholder="Full name" name="name" id="name_input" required>
+					</div>
+					<div class="email">
+						<label for="email"></label>
+						<input type="email" placeholder="Email" name="email" id="email_input" required>
+					</div>
+					<div class="telephone">
+						<label for="name"></label>
+						<input type="text" placeholder="Phone number" name="telephone" id="telephone_input" required>
+					</div>
+					<div class="subject">
+						<label for="subject"></label>
+						<select placeholder="Subject" name="subject" id="subject_input" required>
+							<option disabled hidden selected>Subject</option>
+							<option>Recruitment</option>
+							<option>Partenership</option>
+							<option>Sponser</option>
+						</select>
+					</div>
+					<div class="message">
+						<label for="message"></label>
+						<textarea name="message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
+					</div>
+					<div class="submit">
+						<input type="submit" value="Send Message" id="form_button" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- End contactus section -->
+	<!-- Start footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="about">
+					<h6>About</h6>
+					<p class="text-justify">
+						Tagheer team serves the community, his goal comes from his name and is to change the ethics of the community, both bad and good, to reach inner peace within the current community
+					</p>
+				</div>
+				<div class="footer-links">
+					<h6>Quick Links</h6>
+					<ul class="links">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#aboutus">About Us</a></li>
+						<li><a href="#missionandvision">Vission & Mission</a></li>
+						<li><a href="#board">Board</a></li>
+						<li><a href="#parteners">Partners</a></li>
+						<!-- <li><a href="#">Achievements</a></li>
+						<li><a href="#">Courses</a></li> -->
+						<li><a href="#contactus">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="cobyright">
+					<p class="copyright-text">Copyright © 2022 All Rights Reserved 
+						<br>
+						Made by IT Administrater
+					</p>
+				</div>
+				<div class="social-icons">
+					<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+					<a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+					<a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+					<a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End footer -->
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>
 	<!-- Custom js -->
