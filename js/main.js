@@ -2,6 +2,7 @@ let header = document.querySelector('header');
 let nav = document.querySelector('nav');
 let currentScroll;
 let oldScroll = 0;
+let contactForm = document.querySelector('contact_form');
 
 $('.toggle-icon').click(() => {
   $('nav').slideToggle();
@@ -57,3 +58,9 @@ window.onscroll = (e) => {
   oldScroll = currentScroll;
   // console.log(window.pageYOffset);
 }
+
+form.addEventListner('submit', (e) => {
+	e.preventDefault();
+	const myFormData = new FormData(e.target);
+	console.log(myFormData);
+})
